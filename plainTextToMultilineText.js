@@ -43,7 +43,6 @@ plainTextToMultilineText = function() {
     return words;
   };
   plainTextToMultilineText.prototype.joinWords = function(obj) {
-    console.log(obj);
     var i, j, part, parts, testGlue;
     var output = "";
     var glued = (typeof(obj) === "object" && obj.hasOwnProperty("glued") && Object.prototype.toString.call(obj.glued) === "[object Array]" && obj.glued.length > 0) ? obj.glued : [];
